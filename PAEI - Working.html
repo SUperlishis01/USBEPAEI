@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHILOSOPHY OF ADULT EDUCATION INVENTORY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .survey-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question:last-child {
+            border-bottom: none;
+        }
+        .question p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .likert-scale {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 10px; 
+        }
+        .likert-scale label {
+            white-space: nowrap; 
+            font-size: 0.9em;
+            cursor: pointer;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+        .likert-scale label:hover {
+            background-color: #e9e9e9;
+        }
+        .likert-scale input[type="radio"] {
+            margin-right: 5px;
+            transform: scale(1.1); 
+        }
+        button[type="submit"] {
+            display: block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    
+        #results {
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; 
+        }
+        #results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        #results-table th, #results-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 0.9em; 
+            white-space: nowrap;
+        }
+        #results-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+        #results-table td {
+            min-width: 40px;
+        }
+        table { 
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table th, table td {
+        border: 2px solid #999; 
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 0.9em;
+    }
+    table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        color: #333;
+    }
+    </style>
+</head>
+<body>
+    <div class="survey-container" id="survey-form-container">
+        <h1 style="text-align: center;">PHILOSOPHY OF ADULT EDUCATION INVENTORY</h1>
+        <h2>INSTRUCTIONS FOR COMPLETION:</h2>
+        <p>Each of the fifteen items on the inventory begins with an incomplete sentence, followed by five different options that might complete the sentence. 
+            Underneath each option is a scale from 1 to 7, followed by a small letter in parentheses. For the present, ignore the letters; 
+            use only the numbers on the scale. </p>
+        <p>To complete the inventory, read each sentence stem and each optional phrase completes it. 
+            On the 1-7 scale, circle the number that most closely indicates how you feel about each option. 
+            The scale goes from 1 (strongly disagree) to 7 (strongly agree), with a neutral point (4) 
+            if you don’t have an opinion or aren’t sure about a particular option. </p>
+        <p>Continue through all the items, reading the sentence stem and indicating how strongly you agree or disagree with each of the options. 
+            Please respond to every option, even if you feel neutral about it. There are no right or wrong answers. </p>
+        <p>As you go through the inventory, respond according to what you most frequently or most likely do. 
+            If it helps you to respond more easily, you may want to focus on a specific course that you teach. 
+            If you do focus on a particular course, choose one that you feel most comfortable teaching –one that you think 
+            best reflects your preferred style of teaching. </p>
+        <form id="survey-form">
+            <h2>1. IN PLANNING AN EDUCATIONAL ACTIVITY, I AM MOST LIKELY TO:</h2>
+            <div class="question">
+                <p>Identify, in conjunction with learners, significant social and/or political issues and plan learning activities around them.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q1" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q1" value="2"> Disagree</label>
+                    <label><input type="radio" name="q1" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q1" value="4"> Neutral</label>
+                    <label><input type="radio" name="q1" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q1" value="6"> Agree</label>
+                    <label><input type="radio" name="q1" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Clearly identify the results I want and develop a program (class, workshop) that will achieve those results.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q2" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q2" value="2"> Disagree</label>
+                    <label><input type="radio" name="q2" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q2" value="4"> Neutral</label>
+                    <label><input type="radio" name="q2" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q2" value="6"> Agree</label>
+                    <label><input type="radio" name="q2" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Begin with a lesson plan that organizes what I plan to teach, when, and how.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q3" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q3" value="2"> Disagree</label>
+                    <label><input type="radio" name="q3" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q3" value="4"> Neutral</label>
+                    <label><input type="radio" name="q3" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q3" value="6"> Agree</label>
+                    <label><input type="radio" name="q3" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Assess learners’ needs and develop valid learning activities based on those needs.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q4" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q4" value="2"> Disagree</label>
+                    <label><input type="radio" name="q4" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q4" value="4"> Neutral</label>
+                    <label><input type="radio" name="q4" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q4" value="6"> Agree</label>
+                    <label><input type="radio" name="q4" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Consider the areas of greatest interest to the learners and plan to deal with them, regardless of what they may be.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q5" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q5" value="2"> Disagree</label>
+                    <label><input type="radio" name="q5" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q5" value="4"> Neutral</label>
+                    <label><input type="radio" name="q5" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q5" value="6"> Agree</label>
+                    <label><input type="radio" name="q5" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>2. PEOPLE LEARN BEST:</h2>
+            <div class="question">
+                <p>When the new knowledge is presented from a problem-solving approach.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q6" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q6" value="2"> Disagree</label>
+                    <label><input type="radio" name="q6" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q6" value="4"> Neutral</label>
+                    <label><input type="radio" name="q6" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q6" value="6"> Agree</label>
+                    <label><input type="radio" name="q6" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>When the learning activity (is clearly structured and) provides for practice and repetition.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q7" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q7" value="2"> Disagree</label>
+                    <label><input type="radio" name="q7" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q7" value="4"> Neutral</label>
+                    <label><input type="radio" name="q7" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q7" value="6"> Agree</label>
+                    <label><input type="radio" name="q7" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Through dialogue (discussion) with other learners and a group coordinator.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q8" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q8" value="2"> Disagree</label>
+                    <label><input type="radio" name="q8" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q8" value="4"> Neutral</label>
+                    <label><input type="radio" name="q8" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q8" value="6"> Agree</label>
+                    <label><input type="radio" name="q8" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>When they are free to explore, without the constraints of a “system.”</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q9" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q9" value="2"> Disagree</label>
+                    <label><input type="radio" name="q9" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q9" value="4"> Neutral</label>
+                    <label><input type="radio" name="q9" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q9" value="6"> Agree</label>
+                    <label><input type="radio" name="q9" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>From an “expert” who knows what he or she is talking about.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q10" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q10" value="2"> Disagree</label>
+                    <label><input type="radio" name="q10" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q10" value="4"> Neutral</label>
+                    <label><input type="radio" name="q10" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q10" value="6"> Agree</label>
+                    <label><input type="radio" name="q10" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+
+            <h2>3. THE PRIMARY PURPOSE OF ADULT EDUCATION IS:</h2>
+            <div class="question">
+                <p>To facilitate personal development on the part of the learner.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q11" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q11" value="2"> Disagree</label>
+                    <label><input type="radio" name="q11" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q11" value="4"> Neutral</label>
+                    <label><input type="radio" name="q11" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q11" value="6"> Agree</label>
+                    <label><input type="radio" name="q11" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>To increase learners’ awareness of the need for social change and to enable them to effect such change.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q12" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q12" value="2"> Disagree</label>
+                    <label><input type="radio" name="q12" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q12" value="4"> Neutral</label>
+                    <label><input type="radio" name="q12" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q12" value="6"> Agree</label>
+                    <label><input type="radio" name="q12" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>To develop conceptual or theoretical understanding.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q13" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q13" value="2"> Disagree</label>
+                    <label><input type="radio" name="q13" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q13" value="4"> Neutral</label>
+                    <label><input type="radio" name="q13" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q13" value="6"> Agree</label>
+                    <label><input type="radio" name="q13" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>To establish the learners’ capacity to solve individual and societal problems.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q14" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q14" value="2"> Disagree</label>
+                    <label><input type="radio" name="q14" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q14" value="4"> Neutral</label>
+                    <label><input type="radio" name="q14" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q14" value="6"> Agree</label>
+                    <label><input type="radio" name="q14" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>To develop the learners’ competency and mastery of specific (knowledge and) skills.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q15" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q15" value="2"> Disagree</label>
+                    <label><input type="radio" name="q15" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q15" value="4"> Neutral</label>
+                    <label><input type="radio" name="q15" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q15" value="6"> Agree</label>
+                    <label><input type="radio" name="q15" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>4. MOST OF WHAT PEOPLE KNOW:</h2>
+            <div class="question">
+                <p>Is a result of consciously pursuing their goals, solving problems as they go.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q16" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q16" value="2"> Disagree</label>
+                    <label><input type="radio" name="q16" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q16" value="4"> Neutral</label>
+                    <label><input type="radio" name="q16" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q16" value="6"> Agree</label>
+                    <label><input type="radio" name="q16" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They have learned through critical (reflective) thinking focused on important social and political issues.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q17" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q17" value="2"> Disagree</label>
+                    <label><input type="radio" name="q17" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q17" value="4"> Neutral</label>
+                    <label><input type="radio" name="q17" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q17" value="6"> Agree</label>
+                    <label><input type="radio" name="q17" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They have learned through a trial-and-feedback process.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q18" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q18" value="2"> Disagree</label>
+                    <label><input type="radio" name="q18" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q18" value="4"> Neutral</label>
+                    <label><input type="radio" name="q18" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q18" value="6"> Agree</label>
+                    <label><input type="radio" name="q18" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They have gained through self-discovery rather than some “teaching” process.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q19" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q19" value="2"> Disagree</label>
+                    <label><input type="radio" name="q19" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q19" value="4"> Neutral</label>
+                    <label><input type="radio" name="q19" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q19" value="6"> Agree</label>
+                    <label><input type="radio" name="q19" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They have acquired through a systematic (comprehensive) educational process.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q20" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q20" value="2"> Disagree</label>
+                    <label><input type="radio" name="q20" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q20" value="4"> Neutral</label>
+                    <label><input type="radio" name="q20" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q20" value="6"> Agree</label>
+                    <label><input type="radio" name="q20" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>5. DECISIONS ABOUT WHAT TO INCLUDE IN A (LEARNING) ACTIVITY:</h2>
+            <div class="question">
+                <p>Should be made mostly by the learner in consultation with a facilitator.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q21" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q21" value="2"> Disagree</label>
+                    <label><input type="radio" name="q21" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q21" value="4"> Neutral</label>
+                    <label><input type="radio" name="q21" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q21" value="6"> Agree</label>
+                    <label><input type="radio" name="q21" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Should be based on what learners know and what the teacher believes they should know at the end of the activity.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q22" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q22" value="2"> Disagree</label>
+                    <label><input type="radio" name="q22" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q22" value="4"> Neutral</label>
+                    <label><input type="radio" name="q22" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q22" value="6"> Agree</label>
+                    <label><input type="radio" name="q22" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Should be based on a consideration of key social, (political,) and/or cultural situations.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q23" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q23" value="2"> Disagree</label>
+                    <label><input type="radio" name="q23" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q23" value="4"> Neutral</label>
+                    <label><input type="radio" name="q23" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q23" value="6"> Agree</label>
+                    <label><input type="radio" name="q23" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Should be based on a consideration of the learners’ needs, interests, and problems.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q24" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q24" value="2"> Disagree</label>
+                    <label><input type="radio" name="q24" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q24" value="4"> Neutral</label>
+                    <label><input type="radio" name="q24" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q24" value="6"> Agree</label>
+                    <label><input type="radio" name="q24" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Should be based on careful analysis by the teacher of the material to be covered and the concepts to be taught.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q25" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q25" value="2"> Disagree</label>
+                    <label><input type="radio" name="q25" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q25" value="4"> Neutral</label>
+                    <label><input type="radio" name="q25" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q25" value="6"> Agree</label>
+                    <label><input type="radio" name="q25" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>6. GOOD ADULT EDUCATORS START PLANNING INSTRUCTION:</h2>
+            <div class="question">
+                <p>By considering the end behaviors (specific outcomes) they are looking for and the most efficient ways of producing them in learners.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q26" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q26" value="2"> Disagree</label>
+                    <label><input type="radio" name="q26" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q26" value="4"> Neutral</label>
+                    <label><input type="radio" name="q26" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q26" value="6"> Agree</label>
+                    <label><input type="radio" name="q26" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>By identifying (everyday) problems that can be solved as a result of the instruction.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q27" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q27" value="2"> Disagree</label>
+                    <label><input type="radio" name="q27" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q27" value="4"> Neutral</label>
+                    <label><input type="radio" name="q27" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q27" value="6"> Agree</label>
+                    <label><input type="radio" name="q27" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>By clarifying the (content,) concepts and/or theoretical principles to be taught.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q28" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q28" value="2"> Disagree</label>
+                    <label><input type="radio" name="q28" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q28" value="4"> Neutral</label>
+                    <label><input type="radio" name="q28" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q28" value="6"> Agree</label>
+                    <label><input type="radio" name="q28" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>By clarifying key social and political issues that affect the lives of the learners.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q29" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q29" value="2"> Disagree</label>
+                    <label><input type="radio" name="q29" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q29" value="4"> Neutral</label>
+                    <label><input type="radio" name="q29" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q29" value="6"> Agree</label>
+                    <label><input type="radio" name="q29" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>By asking learners to identify what they want to learn and how they want to learn it.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q30" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q30" value="2"> Disagree</label>
+                    <label><input type="radio" name="q30" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q30" value="4"> Neutral</label>
+                    <label><input type="radio" name="q30" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q30" value="6"> Agree</label>
+                    <label><input type="radio" name="q30" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <h2>7. AS AN ADULT EDUCATOR, I AM MOST SUCCESSFUL IN SITUATIONS:</h2>
+            <div class="question">
+                <p>That are unstructured and flexible enough to follow learners’ interests.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q31" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q31" value="2"> Disagree</label>
+                    <label><input type="radio" name="q31" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q31" value="4"> Neutral</label>
+                    <label><input type="radio" name="q31" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q31" value="6"> Agree</label>
+                    <label><input type="radio" name="q31" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>That are fairly structured, with clear learning objectives and built-in feedback to the learners.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q32" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q32" value="2"> Disagree</label>
+                    <label><input type="radio" name="q32" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q32" value="4"> Neutral</label>
+                    <label><input type="radio" name="q32" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q32" value="6"> Agree</label>
+                    <label><input type="radio" name="q32" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Where I can focus on practical skills and knowledge that can be put to use in solving problems.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q33" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q33" value="2"> Disagree</label>
+                    <label><input type="radio" name="q33" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q33" value="4"> Neutral</label>
+                    <label><input type="radio" name="q33" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q33" value="6"> Agree</label>
+                    <label><input type="radio" name="q33" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Where the scope of the new material is fairly clear and the subject matter is logically organized.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q34" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q34" value="2"> Disagree</label>
+                    <label><input type="radio" name="q34" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q34" value="4"> Neutral</label>
+                    <label><input type="radio" name="q34" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q34" value="6"> Agree</label>
+                    <label><input type="radio" name="q34" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Where the learners have some awareness of social and political issues and are willing to explore the impact of such issues on their daily lives.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q35" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q35" value="2"> Disagree</label>
+                    <label><input type="radio" name="q35" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q35" value="4"> Neutral</label>
+                    <label><input type="radio" name="q35" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q35" value="6"> Agree</label>
+                    <label><input type="radio" name="q35" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>8. IN PLANNING AN EDUCATIONAL ACTIVITY, I TRY TO CREATE:</h2>
+            <div class="question">
+                <p>The real world -problems and all- and to develop learners’ capacities for dealing with it.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q36" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q36" value="2"> Disagree</label>
+                    <label><input type="radio" name="q36" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q36" value="4"> Neutral</label>
+                    <label><input type="radio" name="q36" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q36" value="6"> Agree</label>
+                    <label><input type="radio" name="q36" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>A setting in which learners are encouraged to examine their beliefs and values and to raise critical questions.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q37" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q37" value="2"> Disagree</label>
+                    <label><input type="radio" name="q37" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q37" value="4"> Neutral</label>
+                    <label><input type="radio" name="q37" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q37" value="6"> Agree</label>
+                    <label><input type="radio" name="q37" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>A controlled environment that attracts and holds the learners, moving them systematically towards the objectives.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q38" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q38" value="2"> Disagree</label>
+                    <label><input type="radio" name="q38" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q38" value="4"> Neutral</label>
+                    <label><input type="radio" name="q38" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q38" value="6"> Agree</label>
+                    <label><input type="radio" name="q38" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>A clear outline of the content and the concepts to be taught (learned).</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q39" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q39" value="2"> Disagree</label>
+                    <label><input type="radio" name="q39" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q39" value="4"> Neutral</label>
+                    <label><input type="radio" name="q39" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q39" value="6"> Agree</label>
+                    <label><input type="radio" name="q39" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>A supportive climate that facilitates self-discovery and interaction.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q40" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q40" value="2"> Disagree</label>
+                    <label><input type="radio" name="q40" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q40" value="4"> Neutral</label>
+                    <label><input type="radio" name="q40" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q40" value="6"> Agree</label>
+                    <label><input type="radio" name="q40" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <h2>9. THE LEARNERS’ FEELINGS DURING THE LEARNING PROCESS:</h2>
+            <div class="question">
+                <p>Must be brought to the surface in order for learners to become truly involved in their learning.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q41" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q41" value="2"> Disagree</label>
+                    <label><input type="radio" name="q41" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q41" value="4"> Neutral</label>
+                    <label><input type="radio" name="q41" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q41" value="6"> Agree</label>
+                    <label><input type="radio" name="q41" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Provide energy that can be focused on problems or questions.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q42" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q42" value="2"> Disagree</label>
+                    <label><input type="radio" name="q42" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q42" value="4"> Neutral</label>
+                    <label><input type="radio" name="q42" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q42" value="6"> Agree</label>
+                    <label><input type="radio" name="q42" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Will probably have a great deal to do with the way they approach their learning.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q43" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q43" value="2"> Disagree</label>
+                    <label><input type="radio" name="q43" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q43" value="4"> Neutral</label>
+                    <label><input type="radio" name="q43" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q43" value="6"> Agree</label>
+                    <label><input type="radio" name="q43" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Are used by the skillful adult educator to accomplish the learning objectives.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q44" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q44" value="2"> Disagree</label>
+                    <label><input type="radio" name="q44" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q44" value="4"> Neutral</label>
+                    <label><input type="radio" name="q44" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q44" value="6"> Agree</label>
+                    <label><input type="radio" name="q44" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Are likely to get in the way of teaching (and learning) by diverting the learners’ attention.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q45" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q45" value="2"> Disagree</label>
+                    <label><input type="radio" name="q45" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q45" value="4"> Neutral</label>
+                    <label><input type="radio" name="q45" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q45" value="6"> Agree</label>
+                    <label><input type="radio" name="q45" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>10. THE TEACHING METHODS I (PREFER TO) USE:</h2>
+            <div class="question">
+                <p>Focus on problem-solving and present real challenges to the learner.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q46" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q46" value="2"> Disagree</label>
+                    <label><input type="radio" name="q46" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q46" value="4"> Neutral</label>
+                    <label><input type="radio" name="q46" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q46" value="6"> Agree</label>
+                    <label><input type="radio" name="q46" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Emphasize practice and feedback to the learner.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q47" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q47" value="2"> Disagree</label>
+                    <label><input type="radio" name="q47" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q47" value="4"> Neutral</label>
+                    <label><input type="radio" name="q47" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q47" value="6"> Agree</label>
+                    <label><input type="radio" name="q47" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Are mostly non-directive, encouraging the learner to take responsibility for his/her own learning.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q48" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q48" value="2"> Disagree</label>
+                    <label><input type="radio" name="q48" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q48" value="4"> Neutral</label>
+                    <label><input type="radio" name="q48" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q48" value="6"> Agree</label>
+                    <label><input type="radio" name="q48" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Involve learners in dialogue (discussion) and critical examination of controversial issues.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q49" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q49" value="2"> Disagree</label>
+                    <label><input type="radio" name="q49" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q49" value="4"> Neutral</label>
+                    <label><input type="radio" name="q49" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q49" value="6"> Agree</label>
+                    <label><input type="radio" name="q49" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Are determined primarily by the subject or content to be covered.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q50" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q50" value="2"> Disagree</label>
+                    <label><input type="radio" name="q50" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q50" value="4"> Neutral</label>
+                    <label><input type="radio" name="q50" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q50" value="6"> Agree</label>
+                    <label><input type="radio" name="q50" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>11. WHEN LEARNERS ARE UNINTERESTED IN A SUBJECT, IT IS (PROBABLY) BECAUSE:</h2>
+            <div class="question">
+                <p>They do not realize how serious the consequences of not understanding or (not) learning the subject may be.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q51" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q51" value="2"> Disagree</label>
+                    <label><input type="radio" name="q51" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q51" value="4"> Neutral</label>
+                    <label><input type="radio" name="q51" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q51" value="6"> Agree</label>
+                    <label><input type="radio" name="q51" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They do not see any benefit for their daily lives.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q52" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q52" value="2"> Disagree</label>
+                    <label><input type="radio" name="q52" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q52" value="4"> Neutral</label>
+                    <label><input type="radio" name="q52" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q52" value="6"> Agree</label>
+                    <label><input type="radio" name="q52" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>The teacher does not know enough about the subject or is unable to make it interesting to the learner.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q53" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q53" value="2"> Disagree</label>
+                    <label><input type="radio" name="q53" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q53" value="4"> Neutral</label>
+                    <label><input type="radio" name="q53" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q53" value="6"> Agree</label>
+                    <label><input type="radio" name="q53" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They are not getting adequate (practice or) feedback during the learning process.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q54" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q54" value="2"> Disagree</label>
+                    <label><input type="radio" name="q54" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q54" value="4"> Neutral</label>
+                    <label><input type="radio" name="q54" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q54" value="6"> Agree</label>
+                    <label><input type="radio" name="q54" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They are not ready to learn it or it is not a high priority for them personally.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q55" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q55" value="2"> Disagree</label>
+                    <label><input type="radio" name="q55" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q55" value="4"> Neutral</label>
+                    <label><input type="radio" name="q55" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q55" value="6"> Agree</label>
+                    <label><input type="radio" name="q55" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+            <h2>12. DIFFERENCES AMONG ADULT LEARNERS:</h2>
+            <div class="question">
+                <p>Are relatively unimportant as long as the learners gain a common base of understanding through the learning experience.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q56" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q56" value="2"> Disagree</label>
+                    <label><input type="radio" name="q56" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q56" value="4"> Neutral</label>
+                    <label><input type="radio" name="q56" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q56" value="6"> Agree</label>
+                    <label><input type="radio" name="q56" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Enable them to learn best on their own time and in their own way.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q57" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q57" value="2"> Disagree</label>
+                    <label><input type="radio" name="q57" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q57" value="4"> Neutral</label>
+                    <label><input type="radio" name="q57" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q57" value="6"> Agree</label>
+                    <label><input type="radio" name="q57" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Are primarily due to differences in their life experiences, and will usually lead them to make different applications of new knowledge and skills to their own situations.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q58" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q58" value="2"> Disagree</label>
+                    <label><input type="radio" name="q58" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q58" value="4"> Neutral</label>
+                    <label><input type="radio" name="q58" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q58" value="6"> Agree</label>
+                    <label><input type="radio" name="q58" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Arise from their particular cultural and social situations and should (not) be minimized even as they recognize common needs and problems.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q59" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q59" value="2"> Disagree</label>
+                    <label><input type="radio" name="q59" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q59" value="4"> Neutral</label>
+                    <label><input type="radio" name="q59" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q59" value="6"> Agree</label>
+                    <label><input type="radio" name="q59" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Will not interfere with their learning if each learner is given adequate opportunity for practice and reinforcement.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q60" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q60" value="2"> Disagree</label>
+                    <label><input type="radio" name="q60" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q60" value="4"> Neutral</label>
+                    <label><input type="radio" name="q60" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q60" value="6"> Agree</label>
+                    <label><input type="radio" name="q60" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>13. EVALUATION OF LEARNING OUTCOMES:</h2>
+            <div class="question">
+                <p>Is not of great importance and may not be possible, because the impact of learning may not be evident until much later.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q61" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q61" value="2"> Disagree</label>
+                    <label><input type="radio" name="q61" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q61" value="4"> Neutral</label>
+                    <label><input type="radio" name="q61" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q61" value="6"> Agree</label>
+                    <label><input type="radio" name="q61" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Should be built into the system, so that learners will continually receive feedback and can adjust their performance accordingly.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q62" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q62" value="2"> Disagree</label>
+                    <label><input type="radio" name="q62" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q62" value="4"> Neutral</label>
+                    <label><input type="radio" name="q62" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q62" value="6"> Agree</label>
+                    <label><input type="radio" name="q62" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Is best done by the learners themselves, for their own purposes.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q63" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q63" value="2"> Disagree</label>
+                    <label><input type="radio" name="q63" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q63" value="4"> Neutral</label>
+                    <label><input type="radio" name="q63" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q63" value="6"> Agree</label>
+                    <label><input type="radio" name="q63" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Lets me know how much learners have increased their conceptual understanding of new material.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q64" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q64" value="2"> Disagree</label>
+                    <label><input type="radio" name="q64" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q64" value="4"> Neutral</label>
+                    <label><input type="radio" name="q64" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q64" value="6"> Agree</label>
+                    <label><input type="radio" name="q64" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Is best accomplished when the learner encounters a problem, either in the learning setting or the real world, and successfully resolves it.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q65" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q65" value="2"> Disagree</label>
+                    <label><input type="radio" name="q65" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q65" value="4"> Neutral</label>
+                    <label><input type="radio" name="q65" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q65" value="6"> Agree</label>
+                    <label><input type="radio" name="q65" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+
+            <h2>14. MY PRIMARY ROLE AS A TEACHER OF ADULTS IS TO:</h2>
+            <div class="question">
+                <p>Guide learners through (structured) learning activities with well-directed feedback.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q66" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q66" value="2"> Disagree</label>
+                    <label><input type="radio" name="q66" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q66" value="4"> Neutral</label>
+                    <label><input type="radio" name="q66" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q66" value="6"> Agree</label>
+                    <label><input type="radio" name="q66" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Systematically lead learners in acquiring new information and understanding underlying theories and concepts.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q67" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q67" value="2"> Disagree</label>
+                    <label><input type="radio" name="q67" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q67" value="4"> Neutral</label>
+                    <label><input type="radio" name="q67" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q67" value="6"> Agree</label>
+                    <label><input type="radio" name="q67" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Help learners identify and solve problems (better).</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q68" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q68" value="2"> Disagree</label>
+                    <label><input type="radio" name="q68" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q68" value="4"> Neutral</label>
+                    <label><input type="radio" name="q68" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q68" value="6"> Agree</label>
+                    <label><input type="radio" name="q68" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Increase learners’ awareness of environmental, social (and political) issues and help them learn how to have an impact on these situations.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q69" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q69" value="2"> Disagree</label>
+                    <label><input type="radio" name="q69" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q69" value="4"> Neutral</label>
+                    <label><input type="radio" name="q69" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q69" value="6"> Agree</label>
+                    <label><input type="radio" name="q69" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Facilitate, but not to direct, learning activities.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q70" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q70" value="2"> Disagree</label>
+                    <label><input type="radio" name="q70" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q70" value="4"> Neutral</label>
+                    <label><input type="radio" name="q70" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q70" value="6"> Agree</label>
+                    <label><input type="radio" name="q70" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+
+
+            <h2>15. IN THE END, IF LEARNERS HAVE NOT LEARNED WHAT WAS TAUGHT:</h2>
+            <div class="question">
+                <p>The teacher has not actually “taught.”</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q71" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q71" value="2"> Disagree</label>
+                    <label><input type="radio" name="q71" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q71" value="4"> Neutral</label>
+                    <label><input type="radio" name="q71" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q71" value="6"> Agree</label>
+                    <label><input type="radio" name="q71" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They need to repeat the experience, or a portion of it.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q72" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q72" value="2"> Disagree</label>
+                    <label><input type="radio" name="q72" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q72" value="4"> Neutral</label>
+                    <label><input type="radio" name="q72" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q72" value="6"> Agree</label>
+                    <label><input type="radio" name="q72" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They may have learned something else which they consider just as interesting or useful.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q73" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q73" value="2"> Disagree</label>
+                    <label><input type="radio" name="q73" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q73" value="4"> Neutral</label>
+                    <label><input type="radio" name="q73" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q73" value="6"> Agree</label>
+                    <label><input type="radio" name="q73" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>They do not realize how learning will enable them to significantly influence society.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q74" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q74" value="2"> Disagree</label>
+                    <label><input type="radio" name="q74" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q74" value="4"> Neutral</label>
+                    <label><input type="radio" name="q74" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q74" value="6"> Agree</label>
+                    <label><input type="radio" name="q74" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>It is probably because they are unable to make practical application of new knowledge to problems in their daily lives.</p>
+                <div class="likert-scale">
+                    <label><input type="radio" name="q75" value="1"> Strongly Disagree</label>
+                    <label><input type="radio" name="q75" value="2"> Disagree</label>
+                    <label><input type="radio" name="q75" value="3"> Slightly Disagree</label>
+                    <label><input type="radio" name="q75" value="4"> Neutral</label>
+                    <label><input type="radio" name="q75" value="5"> Slightly Agree</label>
+                    <label><input type="radio" name="q75" value="6"> Agree</label>
+                    <label><input type="radio" name="q75" value="7"> Strongly Agree</label>
+                </div>
+            </div>
+            <button type="submit">Submit Survey</button>
+        </form>
+    </div>
+
+    <div id="results" style="display: none;" class="survey-container">
+        <h2>Philosophy of Adult Education Inventory Results</h2>
+        <p>The numbers below represent your responses (1=Strongly Disagree, 7=Strongly Agree).</p>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <!--Header-->
+                    <th>Inventory Question</th>
+                    <th>a</th>
+                    <th>v</th>
+                    <th>c</th>
+                    <th>w</th>
+                    <th>d</th>
+                    <th>x</th>
+                    <th>f</th>
+                    <th>y</th>
+                    <th>h</th>
+                    <th>z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--Row 1-->
+                    <td>1</td>
+                    <td id="ans_q3"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q2"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q4"></td> 
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q5"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q1"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 2-->
+                    <td>2</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q10"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q7"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q6"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q9"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q8"></td>
+                </tr>
+                <tr>
+                    <!--Row 3-->
+                    <td>3</td>
+                    <td id="ans_q13"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q15"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q14"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q11"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q12"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 4-->
+                    <td>4</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q20"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q18"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q16"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q19"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q17"></td>
+                </tr>
+                <tr>
+                    <!--Row 5-->
+                    <td>5</td>
+                    <td id="ans_q25"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q22"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q24"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q21"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q23"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 6-->
+                    <td>6</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q28"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q26"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q27"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q30"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q29"></td>
+                </tr>
+                <tr>
+                    <!--Row 7-->
+                    <td>7</td>
+                    <td id="ans_q34"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q32"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q33"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q31"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q35"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 8-->
+                    <td>8</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q39"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q38"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q36"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q40"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q37"></td>
+                </tr>
+                <tr>
+                    <!--Row 9-->
+                    <td>9</td>
+                    <td id="ans_q45"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q44"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q42"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q43"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q41"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 10-->
+                    <td>10</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q50"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q47"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q46"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q48"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q49"></td>
+                </tr>
+                <tr>
+                    <!--Row 11-->
+                    <td>11</td>
+                    <td id="ans_q53"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q54"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q52"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q55"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q51"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 12-->
+                    <td>12</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q56"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q60"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q58"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q57"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q59"></td>
+                </tr>
+                <tr>
+                    <!--Row 13-->
+                    <td>13</td>
+                    <td id="ans_q64"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q62"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q65"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q63"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q61"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Row 14-->
+                    <td>14</td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q67"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q66"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q68"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q70"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q69"></td>
+                </tr>
+                <tr>
+                    <!--Row 15-->
+                    <td>15</td>
+                    <td id="ans_q71"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q72"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q75"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q73"></td>
+                    <td style="background-color: black;"></td>
+                    <td id="ans_q74"></td>
+                    <td style="background-color: black;"></td>
+                </tr>
+                <tr>
+                    <!--Footer-->
+                    <td style="background-color: rgb(176, 176, 176);">Total:</td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum1"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum2"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum3"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum4"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum5"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum6"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum7"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum8"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum9"></td>
+                    <td style="background-color: rgb(176, 176, 176);" id="customSum10"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="survey-container" style="margin-top: 40px;">
+            <p>
+                a + v =&nbsp; <span id="finalValueA"></span> &nbsp;= Liberal Arts Adult Education
+            </p>
+            <p>
+                c + w =&nbsp;<span id="finalValueB"></span>&nbsp;= Behavioral Arts Adult Education
+            </p>
+            <p>
+                d + x =&nbsp;<span id="finalValueC"></span>&nbsp;= Progressive Arts Adult Education
+            </p>
+            <p>
+                f + y =&nbsp;<span id="finalValueD"></span>&nbsp;= Humanistic Arts Adult Education
+            </p>
+            <p>
+                h + z =&nbsp;<span id="finalValueE"></span>&nbsp;= Radical Arts Adult Education
+            </p>
+            
+            <h2>Common Groupings of Adult Education Philosophies</h2>
+            <p>Many adult educators find they have two major philosophies. The common groups are:</p>
+            <ul>
+                <li><strong>Liberal</strong> and <strong>Behaviorist</strong></li>
+                <li><strong>Progressive</strong> and <strong>Humanistic</strong></li>
+                <li><strong>Progressive</strong> and <strong>Radical</strong></li>
+                <li><strong>Humanistic</strong> and <strong>Radical</strong></li>
+            </ul>
+            <p>Because of their inherently contradictory beliefs, it is unlikely to find high scores in both Liberal and Radical or Behaviorist and Humanistic.</p>
+        
+            ---
+        
+            <h2>Philosophies of Adult Learning (Zinn’s Framework)</h2>
+            <p>Zinn’s framework identifies five key philosophies that shape adult education:</p>
+            
+            <h3>Liberal (Classical Education)</h3>
+            <p>Focuses on broad knowledge and critical thinking. A class using this approach might involve lectures, Socratic discussions, and deep analysis of texts and ideas.</p>
+        
+            <h3>Behaviorist</h3>
+            <p>Emphasizes measurable skills and structured learning. A behaviorist class would use clear objectives, repetition, assessments, and reinforcement to ensure mastery of content.</p>
+        
+            <h3>Progressive (Pragmatism)</h3>
+            <p>Learning is practical and experience-based. In a progressive classroom, students engage in hands-on activities, problem-solving exercises, and real-world applications.</p>
+        
+            <h3>Humanistic</h3>
+            <p>Centers on personal growth and self-directed learning. A humanistic class encourages reflection, choice, and a supportive environment where learners take ownership of their education.</p>
+        
+            <h3>Radical (Critical Pedagogy)</h3>
+            <p>Focuses on social change and empowerment. A radical education class would involve discussion of societal issues, critical thinking, and action-oriented projects that challenge norms.</p>
+            <p>A classroom built on Zinn’s philosophies would vary based on the dominant approach but would likely integrate elements of discussion, real-world application, learner autonomy, and structured guidance depending on the educator’s and learners' needs.</p>
+        
+            ---
+        
+            <h2>Five Key Adult Education Philosophies (Elias and Merriam’s Work)</h2>
+            <p>An adult education philosophy or perspective is the categorization of an individual’s beliefs, values, and attitudes regarding education. In this section, we present Elias and Merriam’s (1995) seminal work identifying the five key adult education philosophies of liberal, behaviourist, progressive, humanist, and radical perspectives.</p>
+        
+            <h3>A Liberal Perspective</h3>
+            <p>A liberal perspective emphasizes the development of intellectual abilities. Liberal education is related to liberal arts, not to liberal political views. A liberal arts education provides general knowledge with an emphasis on reasoning and judgment instead of professional, vocational, or technical skills (Liberal arts education, n.d.). A liberal education promotes theoretical thinking and stresses philosophy, religion, and the humanities over science.</p>
+            <p>Liberal teachers are experts who transmit knowledge, direct the learning process with authority, and emphasize organized knowledge. Teachers play a prominent role in this philosophy and have a variety of intellectual interests. Teaching methods focus on lectures, readings, study groups, and discussions. Socrates, Plato, and Jean Piaget are considered liberal teachers.</p>
+        
+            <h3>A Behaviorist Perspective</h3>
+            <p>A behaviourist perspective emphasizes skill acquisition. Behaviourist education conditions and shapes individuals through clearly defined purposes and learning objectives. Heavy emphasis is placed on assessing and evaluating whether behaviours taught have been learned.</p>
+            <p>Behaviourist teachers manage learning environments in ways that promote the learning of expected and desired behaviours. Although teachers reinforce or positively acknowledge students when they succeed, both teachers and students are accountable for learning success. Mastery learning and standards-based education are often framed from a behaviourist perspective. Teaching methods include programmed instruction, contract learning, and computer-guided instruction. Ivan Pavlov, Burrhus Frederic Skinner, and John Watson made significant contributions to this perspective.</p>
+        
+            <h3>A Progressive Perspective</h3>
+            <p>A progressive perspective emphasizes an experiential, problem-solving approach to learning. Progressive education liberates learners and equips them to solve problems and apply practical knowledge. Students learn by doing, inquiring, being involved in the community, and responding to real-life problems. Progressive thinking is grounded in five principles. First, education is viewed as a lifelong process and not one restricted to formal classroom instruction. Second, learners can learn more than their immediate interests. Third, they value diverse instructional methodologies. Fourth, teacher-learner relationships are interactive and reciprocal. Fifth, education prepares learners to change society.</p>
+            <p>Teaching methods include the scientific method, problem-based learning, and cooperative learning. Proponents of this perspective include John Dewey, Francis Parker, and Edward Lindeman.</p>
+        
+            <h3>A Humanist Perspective</h3>
+            <p>A humanist perspective underscores personal growth and development. Humanistic education supports learners to become fully functional and self-actualized. Humanists believe that individuals are autonomous and have unlimited potential that should be nurtured. They also believe that individuals have a responsibility to humanity.</p>
+            <p>Learners are viewed as highly motivated, self-directed, and responsible for their own learning. Humanist teachers facilitate and partner with students rather than manage or direct their learning. “Humanist adult educators are concerned with the development of the whole person with a special emphasis upon the emotional and affective dimensions of the personality” (Elias & Merriam, 1995, p. 109).</p>
+        
+            
+        </div>
+        <div class="table" style="margin-top: 40px; margin-bottom: 40px;">
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <!-- Header -->
+                        <th></th>
+                        <th>Liberal</th>
+                        <th>Behaviourist</th>
+                        <th>Progressive</th>
+                        <th>Humanist</th>
+                        <th>Radical</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>Purpose of education</td>
+                        <td>Develop intellectual abilities</td>
+                        <td>Emphasize skill acquisition</td>
+                        <td>Equip learners with practical knowledge and problem-solving skills</td>
+                        <td>Enhance personal growth, development</td>
+                        <td>Promote fundamental social, political, and economic changes in society</td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td>View of learner</td>
+                        <td>Always a learner. Seeks knowledge rather than information</td>
+                        <td>Needs to practise new behaviour. Strong environmental influence on learning</td>
+                        <td>Learn by doing, experimenting, and working with real-life problems</td>
+                        <td>Motivated, self-directed, responsible. Learners have unlimited potential</td>
+                        <td>Equal to the teacher within the learning process</td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>Role of teacher</td>
+                        <td>Experts who transmit knowledge. Direct the learning process</td>
+                        <td>Manage, control, and positively reinforce. Predict and direct learning outcomes</td>
+                        <td>Organize, establish, and guide interactive reciprocal relationships with learners</td>
+                        <td>Facilitate, support, and partner. Attentive to emotional and affective issues</td>
+                        <td>Coordinates and suggests but does not determine direction of learning</td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>Methods</td>
+                        <td>Lectures, readings, discussion groups</td>
+                        <td>Programmed instruction, computer-assisted learning</td>
+                        <td>Problem-based learning, cooperative learning</td>
+                        <td>Team teaching, group tasks, individualized learning</td>
+                        <td>Group identifies problems to solve, discussion groups</td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>Key words</td>
+                        <td>Learning for its own sake. Classical, traditional</td>
+                        <td>Stimulus-response. Behaviour modification. Learning objectives and evaluation of those objectives</td>
+                        <td>Based on experience. Democratic principles. Problem solving</td>
+                        <td>Self-actualization, cooperation, group work, self-direction</td>
+                        <td>Raising of awareness of social problems. Social action. Non-compulsory learning activities</td>
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr>
+                        <td>Authors</td>
+                        <td>Socrates, Plato, Piaget</td>
+                        <td>Pavlov, Skinner, Watson</td>
+                        <td>Dewey, Parker, Lindeman</td>
+                        <td>Rogers, Maslow, Knowles</td>
+                        <td>Friere, Illich, Holt</td>
+                    </tr>
+                    <!-- Row 7 -->
+                    <tr>
+                        <td>Examples</td>
+                        <td>University or college lecturest</td>
+                        <td>CPR certification and renewal</td>
+                        <td>Problem-based health-care programs</td>
+                        <td>Clinical pre-and post-conferences</td>
+                        <td>Literacy training</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><em>Note. Adapted from Elias and Merriam (1980) and Zinn (1983, 1994, 1998).</em></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const surveyForm = document.getElementById('survey-form');
+            const surveyFormContainer = document.getElementById('survey-form-container');
+            const resultsDiv = document.getElementById('results');
+    
+            const customSumElements = {};
+            for (let i = 1; i <= 10; i++) {
+                customSumElements[`sum${i}`] = document.getElementById(`customSum${i}`);
+            }
+    
+            const finalValueElements = {
+                A: document.getElementById('finalValueA'),
+                B: document.getElementById('finalValueB'),
+                C: document.getElementById('finalValueC'),
+                D: document.getElementById('finalValueD'),
+                E: document.getElementById('finalValueE')
+            };
+            // Get a reference to the new paragraph element for finalValueA
+            const finalValueAParagraph = document.getElementById('finalValueAParagraph'); // Ensure this ID exists in your HTML
+    
+    
+            surveyForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                const formData = new FormData(this);
+                const responses = {};
+    
+                // 1. Collect all 75 responses
+                for (let i = 1; i <= 75; i++) {
+                    const questionName = `q${i}`;
+                    const responseValue = formData.get(questionName);
+                    responses[questionName] = responseValue;
+                }
+    
+                // 2. Manually assign individual responses to your 11x17 table cells
+                for (let i = 1; i <= 75; i++) {
+                    const targetCellId = `ans_q${i}`;
+                    const questionKey = `q${i}`;
+    
+                    const cellElement = document.getElementById(targetCellId);
+                    if (cellElement) {
+                        cellElement.textContent = responses[questionKey] !== null ? responses[questionKey] : '';
+                    } else {
+                        console.warn(`Cell with ID '${targetCellId}' not found in the results table.`);
+                    }
+                }
+    
+                // Define which questions go into each of your 10 sums.
+                const sumDefinitions = {
+                    sum1: [3, 13, 25, 34, 45, 53, 64, 71],
+                    sum2: [10, 20, 28, 39, 50, 56, 67],
+                    sum3: [2, 15, 22, 32, 44, 54, 62, 72],
+                    sum4: [7, 18, 26, 38, 47, 60, 66],
+                    sum5: [4, 14, 24, 33, 42, 52, 65, 75],
+                    sum6: [6, 16, 27, 36, 46, 58, 68],
+                    sum7: [5, 11, 21, 31, 43, 55, 63, 73],
+                    sum8: [9, 19, 30, 40, 48, 57, 70],
+                    sum9: [1, 12, 23, 35, 41, 51, 61, 74],
+                    sum10: [8, 17, 29, 37, 49, 59, 69]
+                };
+    
+                const calculatedCustomSums = {}; // Declared here, correctly in scope
+    
+                // --- Loop to calculate and store the 10 custom sums ---
+                for (let i = 1; i <= 10; i++) {
+                    const currentSumKey = `sum${i}`;
+                    const questionsForThisSum = sumDefinitions[currentSumKey];
+                    let calculatedSum = 0;
+    
+                    if (questionsForThisSum) {
+                        for (const qNum of questionsForThisSum) {
+                            const questionKey = `q${qNum}`;
+                            const responseVal = responses[questionKey];
+    
+                            if (responseVal !== null) {
+                                calculatedSum += parseInt(responseVal, 10);
+                            }
+                        }
+                    } else {
+                        console.warn(`No questions defined for ${currentSumKey}`);
+                    }
+    
+                    // Display the calculated sum in its HTML element
+                    if (customSumElements[currentSumKey]) {
+                        customSumElements[currentSumKey].textContent = calculatedSum;
+                    }
+                    calculatedCustomSums[currentSumKey] = calculatedSum; // Store for later use
+                }
+                // --- END of loop for 10 custom sums ---
+    
+    
+                // --- NEW/CORRECTLY PLACED CODE: Calculate and Display 5 Final Values ---
+                const finalValueCombinations = {
+                    A: ['sum1', 'sum2'],
+                    B: ['sum3', 'sum4'],
+                    C: ['sum5', 'sum6'],
+                    D: ['sum7', 'sum8'],
+                    E: ['sum9', 'sum10']
+                };
+    
+                for (const finalKey in finalValueCombinations) {
+                    if (finalValueCombinations.hasOwnProperty(finalKey)) {
+                        const sumsToCombine = finalValueCombinations[finalKey];
+                        let finalCalculatedValue = 0;
+                        let hasValidNumbers = false;
+    
+                        for (const sumKey of sumsToCombine) {
+                            // Get the calculated value of the custom sum (from calculatedCustomSums)
+                            const valueToAdd = calculatedCustomSums[sumKey]; // This will now be correctly populated
+    
+                            // Check if the value is a valid number before adding
+                            if (!isNaN(valueToAdd)) {
+                                finalCalculatedValue += valueToAdd;
+                                hasValidNumbers = true;
+                            } else {
+                                // This warn means calculatedCustomSums[sumKey] was truly NaN/undefined
+                                console.warn(`Sum '${sumKey}' resulted in NaN or was invalid when calculating final value '${finalKey}'.`);
+                            }
+                        }
+    
+                        // Display the final calculated value in its span
+                        if (finalValueElements[finalKey]) {
+                            finalValueElements[finalKey].textContent = hasValidNumbers ? finalCalculatedValue : '--';
+                        }
+    
+                        // Update the specific paragraph for finalValueA if it's key 'A'
+                        if (finalKey === 'A' && finalValueAParagraph) {
+                            finalValueAParagraph.textContent = `Your calculated Liberal Arts Adult Education score is: ${hasValidNumbers ? finalCalculatedValue : '--'}`;
+                        }
+                    }
+                }
+                // --- END of final value calculation ---
+    
+    
+                // 4. Display results and hide the survey form
+                surveyFormContainer.style.display = 'none';
+                resultsDiv.style.display = 'block';
+    
+                console.log("Collected Responses:", responses);
+                console.log("Calculated Custom Sums:", calculatedCustomSums); // Check this in console after submission
+            });
+        });
+    </script>
+</body>
+</html>
